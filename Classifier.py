@@ -129,7 +129,7 @@ def print_leaf(counts):
     for lbl in counts.keys():
         probs[lbl] = str(int(counts[lbl] / total * 100)) + "%"
     return probs
-def random_tree(data):
+def random_tree():
 #if __name__ == "__main__":
     Random_Tree=[]
     #uncomment if you are training the random tree
@@ -177,7 +177,10 @@ def random_tree(data):
                 tshirt +=1
         if mobile>pant and mobile >  tshirt:
             print ("Mobile")
+            return
         elif pant>tshirt:
             print("Pant")
+            return
         else:
             print("TShirt")
+            return

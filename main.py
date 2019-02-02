@@ -40,4 +40,4 @@ with open('unknown.csv', 'w') as f:
     writer = csv.writer(f)
     writer.writerow(total_list)
 f.close()
-random_tree(total_list)
+random_tree()
